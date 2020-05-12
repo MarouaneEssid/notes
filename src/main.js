@@ -6,6 +6,8 @@ import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false;
 
+Vue.use(VueResource);
+Vue.http.options.root = 'https://vue-notes-a3877.firebaseio.com';
 new Vue({
   render: h => h(App)
 }).$mount('#app');
